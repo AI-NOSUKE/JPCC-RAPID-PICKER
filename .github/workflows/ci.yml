@@ -18,7 +18,13 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # ←この一行が「実行前に LIMIT=1 に書き換える」処理（コード本体はそのままでOK）
+      - name: Force LIMIT=1 for CI run
+        run: sed -i 's/^LIMIT *=.*/LIMIT = 1  # CI override/' jpcc_rapid_picker.py
 
       - name: Run picker (LIMIT=1)
         run: python jpcc_rapid_picker.py
