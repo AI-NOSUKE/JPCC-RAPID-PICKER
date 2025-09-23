@@ -22,9 +22,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # CI だけ LIMIT=1 に強制上書き（元コードは LIMIT=2000 のまま）
+      # CIだけ実行前に jpcc_rapid_picker.py の LIMIT を 1 に強制置換（sedは使わない）
       - name: Force LIMIT=1 for CI run
-        run: sed -i "s/^LIMIT *=.*/LIMIT = 1  # CI override/" jpcc_rapid_picker.py
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p = Path('jpcc_rapid_picker.py')
+          t = p.read_text(encoding='utf-8')
+          t2 = re.sub(r'(?m)^\s*LIMIT\s*=\s*\d+', 'LIMIT = 1', t)
+          p.write_text(t2, encoding='utf-8')
+          print('LIMIT patched to 1')
+          PY
 
       - name: Run picker (LIMIT=1)
         run: python jpcc_rapid_picker.py
