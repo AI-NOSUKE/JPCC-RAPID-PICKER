@@ -1,8 +1,5 @@
 # JPCC-RAPID-PICKER
-![python](https://img.shields.io/badge/python-3.11%2B-blue)  
-![license](https://img.shields.io/badge/License-MIT-green)  
-![ci](https://github.com/AI-NOSUKE/JPCC-RAPID-PICKER/actions/workflows/ci.yml/badge.svg)  
-![release](https://img.shields.io/github/v/release/AI-NOSUKE/JPCC-RAPID-PICKER?color=orange)  
+![python](https://img.shields.io/badge/python-3.11%2B-blue)  ![license](https://img.shields.io/badge/License-MIT-green)  ![ci](https://github.com/AI-NOSUKE/JPCC-RAPID-PICKER/actions/workflows/ci.yml/badge.svg)  ![release](https://img.shields.io/github/v/release/AI-NOSUKE/JPCC-RAPID-PICKER?color=orange)  
 
 **日本語ウェブ全体の言説を「手軽に」収集できる、高速抽出ツールです。**  
 Japanese Common Crawl (JPCC) データセット（2019–2023年のスナップショット公開コーパス）を対象に、キーワードを含む文章だけを抽出できます。  
