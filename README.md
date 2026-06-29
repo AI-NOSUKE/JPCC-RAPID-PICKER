@@ -1,4 +1,17 @@
 # JPCC-RAPID-PICKER
+
+> [!IMPORTANT]
+> This repository is a legacy rapid version of the JPCC picker tools.
+> The current maintained version is **JPCC-RANDOM-PICKER v1.5-output-info**:
+> https://github.com/AI-NOSUKE/JPCC-RANDOM-PICKER
+>
+> このリポジトリは旧版です。
+> 現行版は **JPCC-RANDOM-PICKER v1.5-output-info** です。
+> 新しく使う場合は、検索キーワード・実行条件・データソース期間を `*_info.txt` に残せる現行版を利用してください。
+>
+> JPCC-RAPID-PICKER は、行バイトで高速に事前検索する「旧・高速版」として、開発履歴・比較用に残しています。
+> 表記ゆれまで含めて拾う用途では、現行版 JPCC-RANDOM-PICKER を推奨します。
+
 ![python](https://img.shields.io/badge/python-3.11%2B-blue)  ![license](https://img.shields.io/badge/License-MIT-green)  ![ci](https://github.com/AI-NOSUKE/JPCC-RAPID-PICKER/actions/workflows/ci.yml/badge.svg)  ![release](https://img.shields.io/github/v/release/AI-NOSUKE/JPCC-RAPID-PICKER?color=orange)  
 
 **日本語ウェブ全体の言説を「手軽に」収集できる、高速抽出ツールです。**  
@@ -111,3 +124,9 @@ yyyy...,本文の一部...,456
 
 ## 📜 ライセンス
 MIT License
+
+Note: This legacy repository remains under its existing license.
+The current maintained JPCC-RANDOM-PICKER is managed under its own license terms.
+
+注記: この旧版リポジトリは既存ライセンスのまま保存しています。
+現行版 JPCC-RANDOM-PICKER は別ライセンス条件で管理されています。
